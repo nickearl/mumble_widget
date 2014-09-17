@@ -1,0 +1,18 @@
+/*Mumble Widget*/
+/*Add these lines to your CSS stylesheet*/
+#mumblewidget {color: black; font-family:Arial; font-size:100%; border-style:solid; border-width: 5px; border-color: #6a6a6a; max-width: 300px; background:linear-gradient(#303030, #161616); padding:5px; min-width:220px;}
+#mumblewidget-title-area {background-color:#6a6a6a; height:35px; position:relative;}
+#mumblewidget-title-text {font-weight:bold; font-size:125%; text-align:center; color:white; position:absolute; top: 50%; height:24px; margin-top:-11px; width:100%;}
+#mumblewidget-title-icon {float: left; padding: 0px !important; margin: 0px !important; border: none !important; background: none !important; position:absolute; left:5px; top: 5%; height:30px;}
+
+.mumblewidget-channel {border-style:solid; border-width: 1px; border-radius: 5px; padding:5px; margin-top:5px;}
+.mumblewidget-channel-name {font-weight: bold; border-style:solid; border-width:1px; border-radius:10px; border-color:transparent; position:relative; background: linear-gradient(#335A5D, #40787C);}
+.mumblewidget-channel-name-text {position:relative; left:5px;}
+.mumblewidget-channel-users {font-style: italic; color:white; position:relative; left:30px; top:5px; margin-bottom:5px;}
+
+.mumblewidget-channel-subchannel {border-style:solid; border-width: 1px; border-radius: 5px; padding:5px; margin-top:5px; position:relative; left:25px; margin-right:25px;}
+.mumblewidget-channel-subchannel-name {font-weight: bold; font-size: 80%; border-style:solid; border-width:1px; border-radius:5px; border-color:transparent; position:relative; margin-bottom: 5px; background: linear-gradient(#335A5D, #40787C);}
+.mumblewidget-channel-subchannel-name-text {position:relative; left:5px;}
+.mumblewidget-channel-subchannel-users {font-style: italic; color:white; position:relative; left:30px; top:5px; margin-bottom:5px;}
+
+.mumblewidget-channel-icon {float: left; padding: 0px !important; margin: 0px !important; border: none !important; background: none !important; position:relative; left:5px;}
