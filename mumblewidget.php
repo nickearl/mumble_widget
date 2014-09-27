@@ -1,6 +1,6 @@
 <?php
 
-/*Mumble Status Widget v1.0
+/*Mumble Status Widget v1.1
 By Nicholas Earl
 September 2014
 */
@@ -15,7 +15,8 @@ $imgpath = "/sites/all/libraries/mumble_widget/images/"; //Set the path to the d
 require_once 'Ice.php';
 include_once 'Murmur.php';
 $ICE = Ice_initialize();
-$meta = Murmur_MetaPrxHelper::checkedCast($ICE->stringToProxy('Meta:tcp -h 127.0.0.1 -p 6502'));
+//$meta = Murmur_MetaPrxHelper::checkedCast($ICE->stringToProxy('Meta:tcp -h 127.0.0.1 -p 6502')); //Use this format for Ice 3.4.x and earlier
+$meta = Murmur_MetaPrxHelper::checkedCast($ICE->stringToProxy('Meta -e 1.0:tcp -h 127.0.0.1 -p 6502'));  //Use this format for Ice 3.5.x and later
 
 //Get channels and users
 $server = $meta->getServer(1); //You may change the getServer parameter if you have multiple servers
