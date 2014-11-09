@@ -12,6 +12,7 @@ $imgpath = "/sites/all/libraries/mumble_widget/images/"; //Set the path to the d
 
 
 //Initialize Ice
+ini_set('include_path', '/usr/share/Ice-3.5.1/php/lib'); //change this to directory containing Ice.php
 require_once 'Ice.php';
 include_once 'Murmur.php';
 $ICE = Ice_initialize();
